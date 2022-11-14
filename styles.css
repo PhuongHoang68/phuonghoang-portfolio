@@ -8,7 +8,6 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #eff4fd;
 }
 
 nav{
@@ -85,3 +84,7 @@ nav ul li a:hover{
     transition: bottom 1s, left 1s;
 }
 
+.section-head{
+    font-weight: bold;
+    margin-left: 50px;
+}
