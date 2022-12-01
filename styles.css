@@ -32,10 +32,11 @@ nav ul li a{
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font-size: 18px
 }
 
 nav ul li a:hover{
-    color: rgb(231, 26, 26);
+    color: goldenrod;
 }
 
 .detail{
@@ -44,7 +45,7 @@ nav ul li a:hover{
 }
 
 .detail h1{
-    font-size: 50px;
+    font-size: 60px;
     color: #212121;
     margin-bottom: 20px;
 }
@@ -53,7 +54,8 @@ nav ul li a:hover{
 
 .detail p{
     color: #555;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .detail a{
@@ -76,7 +78,8 @@ nav ul li a:hover{
 }
 
 .images img{
-    height: 100%;
+    height: 200px;
+    width: 200px;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -84,7 +87,116 @@ nav ul li a:hover{
     transition: bottom 1s, left 1s;
 }
 
+.resize{
+    height: 450px;
+    width: 360px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    position: absolute;
+    right: 150px;
+    bottom: 200px;
+
+}
+
 .section-head{
     font-weight: bold;
     margin-left: 50px;
+}
+
+.title {
+    border-right: 5px solid goldenrod;
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
+}
+.title h2 {
+    font-size: 37px;
+}
+
+/* ABOUT ME */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 30px;
+}
+
+.about-me p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+/* my work */
+.work {
+    padding: 20px 0;
+    background-color: forestgreen;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+}
+
+
+.projects-wrapper {
+    width: 70%;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+}
+
+.projects-items {
+    width: 70%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.project {
+    border: solid;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    opacity: .8;
+}
+
+.project:hover {
+    opacity: 1.0;
+}
+
+.run-buddy {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url("./assets/run-buddy.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-label {
+    background-color: goldenrod;
+    color: var(--primary);
+    padding: 10px;
+}
+
+
+.contact-me {
+    display: flex;
+
+}
+
+.contact-info{
+    margin-left: 30px;
+
+}
+footer{
+    margin-top: 75px;
+    text-align: center;
+    font-size: 20px;
 }
